@@ -1,9 +1,9 @@
 #include "imports/stdlib.fc";
 
-global uint256 public_key;
-global uint32 execution_time;
-global MsgAddressInt receiver;
-global uint32 seqno;
+;; global uint256 public_key;
+;; global uint32 execution_time;
+;; global MsgAddressInt receiver;
+;; global uint32 seqno;
 
 
 
