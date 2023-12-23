@@ -1,13 +1,9 @@
 #include "imports/stdlib.fc";
 
-;; global uint256 public_key;
-;; global uint32 execution_time;
-;; global MsgAddressInt receiver;
-;; global uint32 seqno;
-
-
-
-update#9df10277 query_id:uint64 signature:bits512 ^[ locked_for:uint32 new_seqno:uint32 ] = ExtInMsgBody;
+global int public_key;
+global uint32 execution_time;
+global MsgAddressInt receiver;
+global uint32 seqno;
 
 
 () recv_internal(int my_balance, int msg_value, cell in_msg_full, slice in_msg_body) impure {
