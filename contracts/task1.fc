@@ -1,6 +1,22 @@
 #include "imports/stdlib.fc";
 
+
+storage$_ public_key:uint256 execution_time:uint32 receiver:MsgAddressInt seqno:uint32 = Storage;
+
+
+
+
+
 () recv_internal(int my_balance, int msg_value, cell in_msg_full, slice in_msg_body) impure {
 
 
+}
+
+
+uint32 get_seqno() method_id {
+    return seqno;
+}
+
+uint32 get_execution_time() method_id {
+    return execution_time;
 }
